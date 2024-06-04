@@ -6,8 +6,6 @@ export function load() {
 		'https://github.com/pocketbase/pocketbase',
 		'https://github.com/nhost/nhost',
 	]
-
-
 	return {
 		lengthOfCareerSoFar,
 		reposThatImInterestedIn,
