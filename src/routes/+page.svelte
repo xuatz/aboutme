@@ -8,9 +8,9 @@
 <p>I've been working as a software developer for {data.lengthOfCareerSoFar} now.</p>
 <p>
 	Some of the git repos I'm quite curious/interested about are:
-	<li>
+	<ul>
 		{#each data.reposThatImInterestedIn as repo}
-			<ul>{repo}</ul>
+			<li>{repo}</li>
 		{/each}
-	</li>
+	</ul>
 </p>
