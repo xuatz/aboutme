@@ -12,6 +12,7 @@ export function load() {
 		'Corne Keyboard',
 		'New backpack',
 		'New checked luggage',
+		'Insta360',
 	]
 	return {
 		lengthOfCareerSoFar,
