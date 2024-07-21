@@ -6,8 +6,16 @@ export function load() {
 		'https://github.com/pocketbase/pocketbase',
 		'https://github.com/nhost/nhost',
 	]
+	const wishlist = [
+		'Samsung Galaxy Z Fold 6',
+		'SSD NAS',
+		'Corne Keyboard',
+		'New backpack',
+		'New checked luggage',
+	]
 	return {
 		lengthOfCareerSoFar,
 		reposThatImInterestedIn,
+		wishlist,
 	};
 }

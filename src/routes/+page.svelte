@@ -14,3 +14,11 @@
 		{/each}	
 	</ul>
 </div>
+<div>
+	My wishlist ^^
+	<ul>
+		{#each data.wishlist as item}
+			<li>{item}</li>
+		{/each}	
+	</ul>
+</div>
