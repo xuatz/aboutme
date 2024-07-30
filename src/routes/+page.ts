@@ -1,7 +1,6 @@
 import { formatDistanceToNow } from 'date-fns';
 
 export function load() {
-	const lengthOfCareerSoFar = formatDistanceToNow(new Date(2014, 2, 1));
 	const reposThatImInterestedIn = [
 		'https://github.com/pocketbase/pocketbase',
 		'https://github.com/nhost/nhost',
@@ -14,8 +13,19 @@ export function load() {
 		'New checked luggage',
 		'Insta360',
 	]
+
+	const firstDayOfWork = new Date(2014, 2, 1);
+
+	const firstDayOfArrivalInJapan = new Date(2017, 11, 14)
+
 	return {
-		lengthOfCareerSoFar,
+		career: {
+			duration: formatDistanceToNow(firstDayOfWork),
+		},
+		japan: {
+			arrival: firstDayOfArrivalInJapan,
+			duration: formatDistanceToNow(firstDayOfArrivalInJapan)
+		},
 		reposThatImInterestedIn,
 		wishlist,
 	};

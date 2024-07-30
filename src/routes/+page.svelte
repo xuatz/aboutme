@@ -3,9 +3,8 @@
 	export let data;
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<p>I've been working as a software developer for {data.lengthOfCareerSoFar} now.</p>
+<p>I've been working as a software developer for {data.career.duration} now.</p>
+<p>In Japan for {data.japan.duration}!</p>
 <div>
 	Some of the git repos I'm quite curious/interested about are:
 	<ul>
