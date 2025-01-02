@@ -30,6 +30,10 @@ export function load() {
     {
       title: 'Cyberpunk: Edgerunners',
       status: 'Backlog',
+    },
+    {
+      title: 'Odd Taxi',
+      status: 'Backlog',
     }
   ]
 
