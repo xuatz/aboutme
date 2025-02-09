@@ -15,16 +15,12 @@
     <Header careerDuration={data.career.duration} japanDuration={data.japan.duration} />
 
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-      <!-- Repos Section -->
       <RepoList repos={data.reposThatImInterestedIn} />
-
-      <!-- Wishlist Section -->
       <Wishlist wishlist={data.shoppingWishlist} />
-
-      <!-- Anime Watchlist Section -->
-      <AnimeWatchlist animeWatchlist={data.animeWatchlist} />
-
-      <!-- Projects Section -->
+      <AnimeWatchlist 
+        animeWatchlist={data.animeWatchlist}
+        animesWatchedInEachSeason={data.animesWatchedInEachSeason}
+      />
       <ProjectList />
     </div>
   </div>
