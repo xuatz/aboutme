@@ -60,7 +60,7 @@ export function load() {
     {
       name: 'Winter 2025',
       startDate: '2025-01-01',
-      shows: ['Grisaia: Phantom Trigger', 'Akuyaku Reijou Tensei Ojisan']
+      shows: ['Grisaia: Phantom Trigger', 'Akuyaku Reijou Tensei Ojisan', 'Danmachi S5', 'Re:Zero S3']
     }
   ];
 
