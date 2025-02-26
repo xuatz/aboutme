@@ -30,6 +30,7 @@ export function load() {
       comments: `Bought a gimmicky one for the NY Apollo Conference trip.`,
     },
     { title: "Insta360" },
+    { title: "Masonry Heater" },
   ];
 
   const animeWatchlist: AnimeItem[] = [
