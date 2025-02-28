@@ -31,6 +31,7 @@ export function load() {
     },
     { title: "Insta360" },
     { title: "Masonry Heater" },
+    { title: "Tile, or Airtags lol" }
   ];
 
   const animeWatchlist: AnimeItem[] = [
