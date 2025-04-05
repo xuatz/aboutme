@@ -8,11 +8,18 @@ export function load() {
     "https://github.com/nhost/nhost",
     "https://github.com/better-auth/better-auth",
     "https://github.com/supertokens/supertokens-core",
+    "https://github.com/chroxify/feedbase",
   ];
 
   const shoppingWishlist = [
+    { title: "Portable Dual Monitor", url: "https://www.intehill.com/products/duotrek-lr13upre-order" },
     { title: "Samsung Galaxy Z Fold 6", strikethrough: true },
-    { title: "SSD NAS" },
+    { 
+      title: "SSD NAS",
+      strikethrough: true,
+      url: "https://www.kickstarter.com/projects/lincplus/redefining-nas-style-power-and-usability-with-lincplus",
+      comments: `Pledged for LincStation N2 on kickstarter`,
+    },
     {
       title: "Corne Keyboard",
       strikethrough: true,
@@ -59,6 +66,17 @@ export function load() {
       status: "Backlog",
       addedOn: "2024-12-31",
     },
+    {
+      title: "Orb",
+      status: "Backlog",
+      addedOn: "2025-04-01",
+    },
+    {
+      title: "Bartender: Kami no Glass",
+      recommendedBy: "XL",
+      status: "Backlog",
+      addedOn: "2025-04-01",
+    },
   ];
 
   const animesWatchedInEachSeason: Season[] = [
@@ -70,6 +88,7 @@ export function load() {
         "Akuyaku Reijou Tensei Ojisan",
         "Danmachi S5",
         "Re:Zero S3",
+        "Guild no Uketsukejou desu ga, Zangyou wa Iya nanode Boss wo Solo Toubatsu Shiyou to Omoimasu"
       ],
     },
   ];
