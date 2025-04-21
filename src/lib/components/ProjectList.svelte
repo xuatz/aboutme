@@ -12,6 +12,14 @@
     {
       name: "70kg Benchpress Goal",
       type: "fitness",
+    },
+    {
+      name: "Build-Your-Own Reverse phone number lookup website",
+      type: "software",
+    },
+    {
+      name: "Meguro Station Community Meal Ledger",
+      type: "software",
     }
   ];
 </script>
