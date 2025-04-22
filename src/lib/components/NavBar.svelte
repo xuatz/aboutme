@@ -7,7 +7,10 @@
     <div class="flex justify-between h-16">
       <div class="flex">
         <div class="flex items-center flex-shrink-0">
-          <a href="/" class="text-xl font-bold text-secondary-light hover:text-secondary-light/80 dark:text-secondary-dark dark:hover:text-secondary-dark/80">
+          <a
+            href="/"
+            class="text-xl font-bold text-secondary-light hover:text-secondary-light/80 dark:text-secondary-dark dark:hover:text-secondary-dark/80"
+          >
             xuatz
           </a>
         </div>
@@ -30,7 +33,7 @@
           </a>
         </div>
       </div>
-      
+
       <!-- Mobile menu button -->
       <div class="flex items-center sm:hidden">
         <button
@@ -41,12 +44,7 @@
         >
           <span class="sr-only">Open main menu</span>
           <!-- Icon when menu is closed -->
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"

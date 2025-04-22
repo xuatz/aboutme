@@ -21,9 +21,12 @@ export interface SkippedSeason extends Season {
 
 export function getStatusIcon(status: AnimeStatus): string {
   switch (status) {
-    case 'Done': return '✅';
-    case 'Watching': return '🎬';
-    default: return '📺';
+    case 'Done':
+      return '✅';
+    case 'Watching':
+      return '🎬';
+    default:
+      return '📺';
   }
 }
 
@@ -40,12 +43,12 @@ export function getStatusStyle(status: AnimeStatus): string {
 
 export function getTobiasHarrisOverButler(item: AnimeItem, seasons: Season[]): SkippedSeason[] {
   if (item.status !== 'Backlog') return [];
-  
+
   const itemAddedDate = new Date(item.addedOn);
-  
+
   return seasons
-    .filter(season => new Date(season.startDate) >= itemAddedDate)
-    .map(season => ({
+    .filter((season) => new Date(season.startDate) >= itemAddedDate)
+    .map((season) => ({
       ...season,
       watchedInstead: season.shows[Math.floor(Math.random() * season.shows.length)]
     }));

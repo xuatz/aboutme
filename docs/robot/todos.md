@@ -1,6 +1,7 @@
 # Project TODOs
 
 ## Short-term Tasks
+
 1. [ ] Implement top navigation bar
    - Design and implement responsive navbar component
    - Add routing support for new sections
@@ -14,12 +15,14 @@
 ## Roadmap Tasks
 
 ### UI/UX
+
 - [ ] Enhance responsive design
 - [ ] Implement dark mode support
 - [ ] Add smooth page transitions
 - [ ] Improve accessibility
 
 ### Content
+
 - [ ] Expand landing page content
 - [ ] Add blog functionality
   - Post creation workflow
@@ -28,6 +31,7 @@
   - RSS feed
 
 ## Adhoc Ideas & Improvements
+
 - [ ] Add interactive elements to landing page
 - [ ] Create a component library for consistent styling
 - [ ] Consider adding a newsletter subscription
