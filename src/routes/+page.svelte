@@ -1,5 +1,4 @@
 <script>
-  import '../app.css';
   import Header from '../lib/components/Header.svelte';
   import RepoList from '../lib/components/RepoList.svelte';
   import Wishlist from '../lib/components/Wishlist.svelte';
