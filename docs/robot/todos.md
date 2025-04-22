@@ -8,6 +8,8 @@
    - Set up route and basic page structure
    - Design blog post layout
    - Implement blog post listing page
+3. [ ] for mobile view, the header navbar should be a sticky header
+   - the nav items (e.g. about, blog) should be hidden until expanded when clicking on the menu icon on the right of the header
 
 ## Roadmap Tasks
 
@@ -24,12 +26,6 @@
   - Categories/tags system
   - Search functionality
   - RSS feed
-
-### Technical
-- [ ] Set up automated deployment pipeline
-- [ ] Implement SEO optimizations
-- [ ] Add analytics tracking
-- [ ] Improve test coverage
 
 ## Adhoc Ideas & Improvements
 - [ ] Add interactive elements to landing page

@@ -3,17 +3,20 @@
   export let japanDuration;
 </script>
 
-<div class="text-center space-y-4 mb-16">
-    <h1 class="text-4xl font-extrabold text-gray-900">
-    About Me
-  </h1>
-  <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-    <div class="px-6 py-3 bg-white rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
+<div class="mb-16 space-y-4 text-center">
+  <h1 class="text-4xl font-extrabold text-primary-dark dark:text-primary-light">About Me</h1>
+  <div class="flex flex-col justify-center gap-4 mt-6 sm:flex-row">
+    <div
+      class="px-6 py-3 transition-transform duration-300 transform bg-white shadow-lg rounded-xl hover:-translate-y-1"
+    >
       <p class="text-lg text-gray-700">
-        🚀 Software Developer for <span class="font-semibold text-yellow-600">{careerDuration}</span>
+        🚀 Software Developer for <span class="font-semibold text-yellow-600">{careerDuration}</span
+        >
       </p>
     </div>
-    <div class="px-6 py-3 bg-white rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
+    <div
+      class="px-6 py-3 transition-transform duration-300 transform bg-white shadow-lg rounded-xl hover:-translate-y-1"
+    >
       <p class="text-lg text-gray-700">
         🗾 In Japan for <span class="font-semibold text-yellow-600">{japanDuration}</span>
       </p>

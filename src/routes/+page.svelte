@@ -8,7 +8,7 @@
   export let data;
 </script>
 
-<div class="min-h-screen p-8 bg-gradient-to-br from-yellow-200 via-yellow-300 to-amber-200">
+<div class="min-h-screen p-8 bg-gradient-to-br from-primary-light via-primary-light to-amber-200 dark:from-primary-dark dark:via-primary-dark dark:to-gray-900">
   <div class="max-w-4xl mx-auto space-y-10">
     <!-- Header Section -->
     <Header careerDuration={data.career.duration} japanDuration={data.japan.duration} />

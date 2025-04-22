@@ -2,12 +2,12 @@
   import { page } from '$app/stores';
 </script>
 
-<nav class="bg-white shadow-lg">
+<nav class="bg-white shadow-lg dark:bg-gray-800">
   <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
       <div class="flex">
         <div class="flex items-center flex-shrink-0">
-          <a href="/" class="text-xl font-bold text-gray-800 hover:text-gray-600">
+          <a href="/" class="text-xl font-bold text-secondary-light hover:text-secondary-light/80 dark:text-secondary-dark dark:hover:text-secondary-dark/80">
             xuatz
           </a>
         </div>
@@ -15,18 +15,18 @@
           <a
             href="/"
             class="inline-flex items-center px-1 pt-1 {$page.url.pathname === '/'
-              ? 'border-b-2 border-yellow-500 text-gray-900'
-              : 'text-gray-500 hover:border-b-2 hover:border-gray-300 hover:text-gray-700'}"
+              ? 'border-b-2 border-primary-light text-secondary-light dark:border-primary-dark dark:text-secondary-dark'
+              : 'text-secondary-light/70 hover:border-b-2 hover:border-primary-light/50 hover:text-secondary-light dark:text-secondary-dark/70 dark:hover:border-primary-dark/50 dark:hover:text-secondary-dark'}"
           >
             About
           </a>
           <a
             href="/blog"
             class="inline-flex items-center px-1 pt-1 {$page.url.pathname.startsWith('/blog')
-              ? 'border-b-2 border-yellow-500 text-gray-900'
-              : 'text-gray-500 hover:border-b-2 hover:border-gray-300 hover:text-gray-700'}"
+              ? 'border-b-2 border-primary-light text-secondary-light dark:border-primary-dark dark:text-secondary-dark'
+              : 'text-secondary-light/70 hover:border-b-2 hover:border-primary-light/50 hover:text-secondary-light dark:text-secondary-dark/70 dark:hover:border-primary-dark/50 dark:hover:text-secondary-dark'}"
           >
-            Vibe Blog
+            Blog
           </a>
         </div>
       </div>
@@ -35,7 +35,7 @@
       <div class="flex items-center sm:hidden">
         <button
           type="button"
-          class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500"
+          class="inline-flex items-center justify-center p-2 rounded-md text-secondary-light/50 hover:text-secondary-light hover:bg-primary-light/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-light dark:text-secondary-dark/50 dark:hover:text-secondary-dark dark:hover:bg-primary-dark/10 dark:focus:ring-primary-dark"
           aria-controls="mobile-menu"
           aria-expanded="false"
         >
@@ -65,18 +65,18 @@
       <a
         href="/"
         class="block pl-3 pr-4 py-2 {$page.url.pathname === '/'
-          ? 'bg-yellow-50 border-l-4 border-yellow-500 text-yellow-700'
-          : 'border-l-4 border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700'}"
+          ? 'bg-primary-light/10 border-l-4 border-primary-light text-secondary-light dark:bg-primary-dark/10 dark:border-primary-dark dark:text-secondary-dark'
+          : 'border-l-4 border-transparent text-secondary-light/70 hover:bg-primary-light/5 hover:border-primary-light/50 hover:text-secondary-light dark:text-secondary-dark/70 dark:hover:bg-primary-dark/5 dark:hover:border-primary-dark/50 dark:hover:text-secondary-dark'}"
       >
         About
       </a>
       <a
         href="/blog"
         class="block pl-3 pr-4 py-2 {$page.url.pathname.startsWith('/blog')
-          ? 'bg-yellow-50 border-l-4 border-yellow-500 text-yellow-700'
-          : 'border-l-4 border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700'}"
+          ? 'bg-primary-light/10 border-l-4 border-primary-light text-secondary-light dark:bg-primary-dark/10 dark:border-primary-dark dark:text-secondary-dark'
+          : 'border-l-4 border-transparent text-secondary-light/70 hover:bg-primary-light/5 hover:border-primary-light/50 hover:text-secondary-light dark:text-secondary-dark/70 dark:hover:bg-primary-dark/5 dark:hover:border-primary-dark/50 dark:hover:text-secondary-dark'}"
       >
-        Vibe Blog
+        Blog
       </a>
     </div>
   </div>
