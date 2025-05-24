@@ -12,10 +12,16 @@ export function load() {
   ];
 
   const shoppingWishlist = [
-    { title: 'Portable SIM Router' },
     { title: 'Samsung Galaxy Z Fold 7' },
-    { title: 'Dyson PencilVac Fluffycones', url: 'https://www.dyson.co.jp/vacuum-cleaners/powerbroom/pencilvac/fluffycones' },
+    {
+      title: 'Dyson PencilVac Fluffycones',
+      url: 'https://www.dyson.co.jp/vacuum-cleaners/powerbroom/pencilvac/fluffycones'
+    },
+    { title: 'Portable SIM Router' },
     { title: 'Sony WH-1000XM6', url: 'https://www.sony.jp/headphone/products/WH-1000XM6/' },
+    { title: 'Insta360' },
+    { title: 'Tile, or Airtags lol' },
+    { title: 'Masonry Heater' },
     {
       title: 'Portable Dual Monitor',
       url: 'https://www.intehill.com/products/duotrek-lr13upre-order'
@@ -41,10 +47,7 @@ export function load() {
       title: 'New checked luggage',
       strikethrough: true,
       comments: `Bought a gimmicky one for the NY Apollo Conference trip.`
-    },
-    { title: 'Insta360' },
-    { title: 'Masonry Heater' },
-    { title: 'Tile, or Airtags lol' }
+    }
   ];
 
   const animeWatchlist: AnimeItem[] = [
@@ -95,6 +98,13 @@ export function load() {
         'Danmachi S5',
         'Re:Zero S3',
         'Guild no Uketsukejou desu ga, Zangyou wa Iya nanode Boss wo Solo Toubatsu Shiyou to Omoimasu'
+      ]
+    },
+    {
+      name: 'Spring 2025',
+      startDate: '2025-04-01',
+      shows: [
+        'To Be Hero X'
       ]
     }
   ];
