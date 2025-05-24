@@ -12,6 +12,10 @@ export function load() {
   ];
 
   const shoppingWishlist = [
+    { title: 'Portable SIM Router' },
+    { title: 'Samsung Galaxy Z Fold 7' },
+    { title: 'Dyson PencilVac Fluffycones', url: 'https://www.dyson.co.jp/vacuum-cleaners/powerbroom/pencilvac/fluffycones' },
+    { title: 'Sony WH-1000XM6', url: 'https://www.sony.jp/headphone/products/WH-1000XM6/' },
     {
       title: 'Portable Dual Monitor',
       url: 'https://www.intehill.com/products/duotrek-lr13upre-order'
