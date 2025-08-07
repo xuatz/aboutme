@@ -1,5 +1,6 @@
 import { formatDistanceToNow } from 'date-fns';
 import type { AnimeItem, Season } from '$lib/types/anime';
+import type { GameItem } from '$lib/types/games';
 
 export function load() {
   const reposThatImInterestedIn = [
@@ -12,7 +13,7 @@ export function load() {
   ];
 
   const shoppingWishlist = [
-    { title: 'Samsung Galaxy Z Fold 7' },
+    { title: 'Samsung Galaxy Z Fold 7', strikethrough: true },
     {
       title: 'Dyson PencilVac Fluffycones',
       url: 'https://www.dyson.co.jp/vacuum-cleaners/powerbroom/pencilvac/fluffycones'
@@ -103,9 +104,85 @@ export function load() {
     {
       name: 'Spring 2025',
       startDate: '2025-04-01',
+      shows: ['To Be Hero X', 'Working!! (Rewatch)']
+    },
+    {
+      name: 'Summer 2025',
+      startDate: '2025-07-01',
       shows: [
-        'To Be Hero X'
+        'Dan Da Dan S2',
+        'Seishun Buta Yarou wa Bunny Girl Senpai no Yume o Minai S2',
+        'Can a Boy-Girl Friendship Survive? (Off-season)'
       ]
+    }
+  ];
+
+  const gameBacklog: GameItem[] = [
+    {
+      title: 'Metaphor: ReFantazio',
+      platform: ['PC', 'PS5'],
+      status: 'Right Before the Last Boss',
+      genre: 'JRPG'
+    },
+    {
+      title: 'Persona 5 Royal',
+      platform: ['PC', 'PS5', 'Switch'],
+      status: 'Right Before the Last Boss',
+      genre: 'JRPG'
+    },
+    {
+      title: 'Atelier Yumia: The Alchemist of Memories & the Envisioned Land',
+      platform: ['PC'],
+      status: 'Backlog',
+      genre: 'JRPG',
+      url: 'https://store.steampowered.com/app/3123410/Atelier_Yumia_The_Alchemist_of_Memories__the_Envisioned_Land/'
+    },
+    {
+      title: 'Clair Obscur: Expedition 33',
+      platform: ['PC'],
+      status: 'Backlog',
+      genre: 'Turn-based RPG',
+      url: 'https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/'
+    },
+    {
+      title: 'Stellar Blade',
+      platform: ['PC', 'PS5'],
+      status: 'Backlog',
+      genre: 'Action RPG',
+      url: 'https://store.steampowered.com/app/3489700/Stellar_Blade/'
+    },
+    {
+      title: 'Fate/EXTRA Record',
+      platform: ['PC', 'PS5', 'Switch'],
+      status: 'Backlog',
+      genre: 'JRPG'
+    },
+    {
+      title: 'The Hundred Line -Last Defense Academy-',
+      platform: ['PC'],
+      status: 'Backlog',
+      genre: 'Adventure',
+      url: 'https://store.steampowered.com/app/3014080/The_Hundred_Line_Last_Defense_Academy/'
+    },
+    {
+      title: 'Trails in the Sky 1st Chapter',
+      platform: ['PC'],
+      status: 'Backlog',
+      genre: 'JRPG',
+      url: 'https://store.steampowered.com/app/3375780/Trails_in_the_Sky_1st_Chapter/'
+    },
+    {
+      title: 'No Sleep For Kaname Date - From AI: THE SOMNIUM FILES',
+      platform: ['PC'],
+      status: 'Backlog',
+      genre: 'Adventure',
+      url: 'https://store.steampowered.com/app/2752180/No_Sleep_For_Kaname_Date__From_AI_THE_SOMNIUM_FILES/'
+    },
+    {
+      title: 'Trails Through Daybreak 2',
+      platform: ['PC', 'PS5'],
+      status: 'Completed',
+      genre: 'JRPG'
     }
   ];
 
@@ -123,6 +200,7 @@ export function load() {
     reposThatImInterestedIn,
     shoppingWishlist,
     animeWatchlist,
-    animesWatchedInEachSeason
+    animesWatchedInEachSeason,
+    gameBacklog
   };
 }

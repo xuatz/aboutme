@@ -4,6 +4,7 @@
   import Wishlist from '../lib/components/Wishlist.svelte';
   import AnimeWatchlist from '../lib/components/AnimeWatchlist.svelte';
   import ProjectList from '../lib/components/ProjectList.svelte';
+  import GameBacklog from '../lib/components/GameBacklog.svelte';
   /** @type {import('./$types').PageData} */
   export let data;
 </script>
@@ -22,6 +23,7 @@
         animeWatchlist={data.animeWatchlist}
         animesWatchedInEachSeason={data.animesWatchedInEachSeason}
       />
+      <GameBacklog gameBacklog={data.gameBacklog} />
       <ProjectList />
     </div>
   </div>

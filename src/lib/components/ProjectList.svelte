@@ -6,11 +6,13 @@
       url: 'https://github.com/xuatz/breakout-shuffler'
     },
     {
-      name: 'Build a SSD NAS',
-      type: 'hardware'
+      name: '70kg Benchpress Goal',
+      type: 'fitness',
+      completed: true,
+      tooltip: 'Achieved on June 12, 2025'
     },
     {
-      name: '70kg Benchpress Goal',
+      name: '80kg Benchpress Goal by End of 2025',
       type: 'fitness'
     },
     {
@@ -51,6 +53,10 @@
           >
             {project.name}
           </a>
+        {:else if project.completed}
+          <span class="text-gray-500 dark:text-gray-500 line-through" title={project.tooltip || ''}>
+            {project.name}
+          </span>
         {:else}
           <span class="text-gray-700 dark:text-secondary-dark/70">
             {project.name}
