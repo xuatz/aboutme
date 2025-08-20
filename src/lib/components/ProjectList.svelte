@@ -12,7 +12,7 @@
       tooltip: 'Achieved on June 12, 2025'
     },
     {
-      name: '80kg Benchpress Goal by End of 2025',
+      name: '80kg (currently 72.5kg) Benchpress Goal by End of 2025',
       type: 'fitness'
     },
     {
