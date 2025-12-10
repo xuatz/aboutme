@@ -1,3 +1,147 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Prose styles for blog posts */
+.prose {
+  @apply text-secondary-light dark:text-secondary-dark leading-relaxed;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold mt-8 mb-4 text-secondary-light dark:text-secondary-dark;
+}
+
+.prose h3 {
+  @apply text-xl font-bold mt-6 mb-3 text-secondary-light dark:text-secondary-dark;
+}
+
+.prose h4 {
+  @apply text-lg font-semibold mt-4 mb-2 text-secondary-light dark:text-secondary-dark;
+}
+
+.prose p {
+  @apply mb-4 text-secondary-light/80 dark:text-secondary-dark/80;
+}
+
+.prose strong {
+  @apply font-bold text-secondary-light dark:text-secondary-dark;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose ul {
+  @apply list-disc list-inside mb-4 space-y-1 text-secondary-light/80 dark:text-secondary-dark/80;
+}
+
+.prose ol {
+  @apply list-decimal list-inside mb-4 space-y-1 text-secondary-light/80 dark:text-secondary-dark/80;
+}
+
+.prose li {
+  @apply pl-2;
+}
+
+.prose a {
+  @apply text-amber-600 dark:text-amber-400 underline hover:text-amber-700 dark:hover:text-amber-300;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-amber-500 pl-4 my-4 text-secondary-light/70 dark:text-secondary-dark/70;
+  font-style: italic;
+}
+
+.prose hr {
+  @apply my-8 border-gray-300 dark:border-gray-600;
+}
+
+/* Inline code */
+.prose code {
+  @apply bg-gray-200 dark:bg-gray-700 px-1.5 py-0.5 rounded text-sm font-mono text-secondary-light dark:text-secondary-dark;
+}
+
+/* Code blocks - override inline code styles */
+.prose pre {
+  @apply bg-gray-900 dark:bg-gray-950 p-4 rounded-lg overflow-x-auto my-4;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-sm text-gray-100;
+}
+
+/* Tables */
+.prose table {
+  @apply w-full my-4 border-collapse;
+}
+
+.prose th {
+  @apply bg-gray-200 dark:bg-gray-700 text-left p-3 font-semibold text-secondary-light dark:text-secondary-dark border border-gray-300 dark:border-gray-600;
+}
+
+.prose td {
+  @apply p-3 border border-gray-300 dark:border-gray-600 text-secondary-light/80 dark:text-secondary-dark/80;
+}
+
+/* Syntax highlighting - Prism.js theme */
+.prose pre code .comment,
+.prose pre code .prolog,
+.prose pre code .doctype,
+.prose pre code .cdata {
+  color: #6a9955;
+}
+
+.prose pre code .punctuation {
+  color: #d4d4d4;
+}
+
+.prose pre code .property,
+.prose pre code .tag,
+.prose pre code .boolean,
+.prose pre code .number,
+.prose pre code .constant,
+.prose pre code .symbol,
+.prose pre code .deleted {
+  color: #b5cea8;
+}
+
+.prose pre code .selector,
+.prose pre code .attr-name,
+.prose pre code .string,
+.prose pre code .char,
+.prose pre code .builtin,
+.prose pre code .inserted {
+  color: #ce9178;
+}
+
+.prose pre code .operator,
+.prose pre code .entity,
+.prose pre code .url,
+.prose pre code .variable {
+  color: #d4d4d4;
+}
+
+.prose pre code .atrule,
+.prose pre code .attr-value,
+.prose pre code .function,
+.prose pre code .class-name {
+  color: #dcdcaa;
+}
+
+.prose pre code .keyword {
+  color: #569cd6;
+}
+
+.prose pre code .regex,
+.prose pre code .important {
+  color: #d16969;
+}
+
+.prose pre code .important,
+.prose pre code .bold {
+  font-weight: bold;
+}
+
+.prose pre code .italic {
+  font-style: italic;
+}

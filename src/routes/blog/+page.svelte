@@ -1,4 +1,16 @@
 <script lang="ts">
+  import type { PageData } from './$types';
+
+  export let data: PageData;
+
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  };
 </script>
 
 <div
@@ -15,19 +27,36 @@
     </div>
 
     <div class="grid gap-8">
-      <!-- Placeholder for future blog posts -->
-      <div
-        class="p-6 transition-transform duration-300 transform bg-white shadow-lg dark:bg-gray-800 rounded-xl hover:-translate-y-1"
-      >
-        <p class="mb-2 text-sm text-secondary-light/50 dark:text-secondary-dark/50">Coming Soon</p>
-        <h2 class="mb-4 text-2xl font-bold text-secondary-light dark:text-secondary-dark">
-          Stay tuned for upcoming posts!
-        </h2>
-        <p class="text-secondary-light/70 dark:text-secondary-dark/70">
-          This space will soon be filled with interesting thoughts, tech discoveries, and various
-          other topics that catch my attention.
-        </p>
-      </div>
+      {#if data.posts.length === 0}
+        <div
+          class="p-6 transition-transform duration-300 transform bg-white shadow-lg dark:bg-gray-800 rounded-xl hover:-translate-y-1"
+        >
+          <p class="mb-2 text-sm text-secondary-light/50 dark:text-secondary-dark/50">
+            Coming Soon
+          </p>
+          <h2 class="mb-4 text-2xl font-bold text-secondary-light dark:text-secondary-dark">
+            Stay tuned for upcoming posts!
+          </h2>
+          <p class="text-secondary-light/70 dark:text-secondary-dark/70">
+            This space will soon be filled with interesting thoughts, tech discoveries, and various
+            other topics that catch my attention.
+          </p>
+        </div>
+      {:else}
+        {#each data.posts as post}
+          <a
+            href="/blog/{post.slug}"
+            class="block p-6 transition-transform duration-300 transform bg-white shadow-lg dark:bg-gray-800 rounded-xl hover:-translate-y-1"
+          >
+            <p class="mb-2 text-sm text-secondary-light/50 dark:text-secondary-dark/50">
+              {formatDate(post.date)}
+            </p>
+            <h2 class="mb-4 text-2xl font-bold text-secondary-light dark:text-secondary-dark">
+              {post.title}
+            </h2>
+          </a>
+        {/each}
+      {/if}
     </div>
   </div>
 </div>
