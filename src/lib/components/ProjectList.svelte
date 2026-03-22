@@ -22,6 +22,14 @@
     {
       name: 'Meguro Station Community Meal Ledger',
       type: 'software'
+    },
+    {
+      name: 'Building a DIY NAS',
+      type: 'hardware'
+    },
+    {
+      name: 'Building a DIY Homeserver',
+      type: 'hardware'
     }
   ];
 </script>
