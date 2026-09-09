@@ -99,6 +99,7 @@ export function load() {
         'Akuyaku Reijou Tensei Ojisan',
         'Danmachi S5',
         'Re:Zero S3',
+        'Dr. Stone S4 (Cour 1)',
         'Guild no Uketsukejou desu ga, Zangyou wa Iya nanode Boss wo Solo Toubatsu Shiyou to Omoimasu'
       ]
     },
@@ -113,7 +114,39 @@ export function load() {
       shows: [
         'Dan Da Dan S2',
         'Seishun Buta Yarou wa Bunny Girl Senpai no Yume o Minai S2',
-        'Can a Boy-Girl Friendship Survive? (Off-season)'
+        'Tsuihousha Shokudou e Youkoso!',
+        'Futari Solo Camp',
+        'Dr. Stone S4 (Cour 2)'
+      ]
+    },
+    {
+      name: 'Fall 2025',
+      startDate: '2025-10-01',
+      shows: ['Spy x Family S3']
+    },
+    {
+      name: 'Winter 2026',
+      startDate: '2026-01-01',
+      shows: ['Fate/strange Fake', 'Sousou no Frieren S2']
+    },
+    {
+      name: 'Spring 2026',
+      startDate: '2026-04-01',
+      shows: [
+        'Re:Zero kara Hajimeru Isekai Seikatsu S4 (Cour 1)',
+        'Tensei Shitara Slime Datta Ken S4',
+        'Dr. Stone S4 (Cour 3)',
+        'Tongari Boushi no Atelier'
+      ]
+    },
+    {
+      name: 'Summer 2026',
+      startDate: '2026-07-01',
+      shows: [
+        'Re:Zero kara Hajimeru Isekai Seikatsu S4 (Cour 2)',
+        'Super no Ura de Yani Suu Futari',
+        'Mushoku Tensei S3',
+        'Buchigire Reijou wa Houfuku o Chikaimashita. Madousho no Chikara de Sokoku o Tatakitsubushimasu'
       ]
     }
   ];
