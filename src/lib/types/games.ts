@@ -1,10 +1,5 @@
 export type GameStatus =
-  | 'Playing'
-  | 'Completed'
-  | 'Backlog'
-  | 'Dropped'
-  | 'On Hold'
-  | 'Right Before the Last Boss';
+  'Playing' | 'Completed' | 'Backlog' | 'Dropped' | 'On Hold' | 'Right Before the Last Boss';
 
 export type GamePlatform = 'PC' | 'PS5' | 'PS4' | 'Switch' | 'Steam Deck' | 'Xbox' | 'Mobile';
 

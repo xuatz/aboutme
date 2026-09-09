@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { GameItem } from '$lib/types/games';
-  import { getGameStatusIcon, getGameStatusStyle, getPriorityStyle } from '$lib/types/games';
+  import { getGameStatusIcon, getGameStatusStyle } from '$lib/types/games';
 
   export let gameBacklog: GameItem[];
 
