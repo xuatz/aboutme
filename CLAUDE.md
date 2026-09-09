@@ -10,21 +10,21 @@ Personal portfolio website built with SvelteKit, TypeScript, and TailwindCSS. Fe
 
 ```bash
 # Development
-pnpm dev              # Start dev server on http://localhost:5173
-pnpm preview          # Preview production build
+npm run dev              # Start dev server on http://localhost:5173
+npm run preview          # Preview production build
 
 # Build & Deploy
-pnpm build            # Create production build in .svelte-kit/
+npm run build            # Create production build in .svelte-kit/
 
 # Quality Checks (run these before committing)
-pnpm check            # Type checking with svelte-check
-pnpm lint             # ESLint and Prettier checks
-pnpm format           # Auto-format code
+npm run check            # Type checking with svelte-check
+npm run lint             # ESLint and Prettier checks
+npm run format           # Auto-format code
 
 # Testing
-pnpm test:unit        # Run Vitest unit tests
-pnpm test:integration # Run Playwright E2E tests
-pnpm test             # Run all tests
+npm run test:unit        # Run Vitest unit tests
+npm run test:integration # Run Playwright E2E tests
+npm test                # Run all tests
 ```
 
 ## Architecture & Key Patterns
@@ -77,7 +77,7 @@ pnpm test             # Run all tests
 Always run:
 
 ```bash
-pnpm check && pnpm lint && pnpm test:unit
+npm run check && npm run lint && npm run test:unit
 ```
 
 ### Testing Approach
@@ -100,7 +100,7 @@ Strict mode enabled. All components should have proper type annotations.
 
 - Development server: http://localhost:5173
 - Node.js with ES modules
-- Package manager: pnpm (required)
+- Package manager: npm
 
 ## Project-Specific Patterns
 

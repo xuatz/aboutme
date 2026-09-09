@@ -10,7 +10,7 @@ Personal website built with SvelteKit, currently featuring a landing page with p
 
 - Frontend Framework: SvelteKit
 - Styling: TailwindCSS
-- Package Manager: pnpm
+- Package Manager: npm
 
 ### Key Components
 
