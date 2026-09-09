@@ -1,6 +1,7 @@
 import { formatDistanceToNow } from 'date-fns';
 import type { AnimeItem, Season } from '$lib/types/anime';
 import type { GameItem } from '$lib/types/games';
+import type { ShowBacklogItem } from '$lib/types/shows';
 
 export function load() {
   const reposThatImInterestedIn = [
@@ -117,6 +118,13 @@ export function load() {
     }
   ];
 
+  const showBacklog: ShowBacklogItem[] = [
+    {
+      title: 'Fallout',
+      format: 'Live-action TV series'
+    }
+  ];
+
   const gameBacklog: GameItem[] = [
     {
       title: 'Metaphor: ReFantazio',
@@ -201,6 +209,7 @@ export function load() {
     shoppingWishlist,
     animeWatchlist,
     animesWatchedInEachSeason,
+    showBacklog,
     gameBacklog
   };
 }

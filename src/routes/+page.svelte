@@ -2,7 +2,7 @@
   import Header from '../lib/components/Header.svelte';
   import RepoList from '../lib/components/RepoList.svelte';
   import Wishlist from '../lib/components/Wishlist.svelte';
-  import AnimeWatchlist from '../lib/components/AnimeWatchlist.svelte';
+  import Watchlist from '../lib/components/Watchlist.svelte';
   import ProjectList from '../lib/components/ProjectList.svelte';
   import GameBacklog from '../lib/components/GameBacklog.svelte';
   /** @type {import('./$types').PageData} */
@@ -19,9 +19,10 @@
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
       <RepoList repos={data.reposThatImInterestedIn} />
       <Wishlist wishlist={data.shoppingWishlist} />
-      <AnimeWatchlist
+      <Watchlist
         animeWatchlist={data.animeWatchlist}
         animesWatchedInEachSeason={data.animesWatchedInEachSeason}
+        showBacklog={data.showBacklog}
       />
       <GameBacklog gameBacklog={data.gameBacklog} />
       <ProjectList />
