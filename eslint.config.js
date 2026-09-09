@@ -12,6 +12,7 @@ export default [
       '**/node_modules/**',
       'build/**',
       '.svelte-kit/**',
+      '.wrangler/**',
       'test-results/**',
       'playwright-report/**',
       'package/**',

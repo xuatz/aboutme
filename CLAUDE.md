@@ -90,7 +90,7 @@ npm run check && npm run lint && npm run test:unit
 
 ### SvelteKit Adapter
 
-Uses `adapter-auto` for automatic deployment adapter selection. Builds static site by default.
+Uses `@sveltejs/adapter-cloudflare` for Cloudflare Pages. Build output is written to `.svelte-kit/cloudflare` with server rendering and static assets.
 
 ### TypeScript
 

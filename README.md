@@ -43,4 +43,18 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Deployment
+
+The project uses `@sveltejs/adapter-cloudflare` for Cloudflare Pages. Configure the Pages project with:
+
+- Build command: `npm run build`
+- Build output directory: `.svelte-kit/cloudflare`
+- Node.js version: `24`
+- Runtime compatibility flag: `nodejs_als` (or `nodejs_compat` if already enabled)
+
+To test the Cloudflare build locally:
+
+```bash
+npm run build
+npx wrangler pages dev .svelte-kit/cloudflare --compatibility-flag=nodejs_als
+```
